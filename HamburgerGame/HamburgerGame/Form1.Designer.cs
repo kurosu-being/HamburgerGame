@@ -23,17 +23,28 @@
         /// コード エディターで変更しないでください。
         /// </summary>
         private void InitializeComponent() {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.Area_Play = new System.Windows.Forms.PictureBox();
+            this.Area_Display = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.Area_Play)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Area_Display)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // Area_Play
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(-2, -12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(662, 574);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.Area_Play.Location = new System.Drawing.Point(-3, 1);
+            this.Area_Play.Name = "Area_Play";
+            this.Area_Play.Size = new System.Drawing.Size(700, 560);
+            this.Area_Play.TabIndex = 0;
+            this.Area_Play.TabStop = false;
+            // 
+            // Area_Display
+            // 
+            this.Area_Display.BackColor = System.Drawing.Color.Linen;
+            this.Area_Display.Location = new System.Drawing.Point(696, 1);
+            this.Area_Display.Name = "Area_Display";
+            this.Area_Display.Size = new System.Drawing.Size(290, 560);
+            this.Area_Display.TabIndex = 1;
+            this.Area_Display.TabStop = false;
             // 
             // HamburgerGAME
             // 
@@ -41,17 +52,20 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(984, 561);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.Area_Display);
+            this.Controls.Add(this.Area_Play);
             this.Name = "HamburgerGAME";
             this.Text = "ハンバーガーゲーム";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Area_Play)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Area_Display)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox Area_Play;
+        private System.Windows.Forms.PictureBox Area_Display;
     }
 }
 
